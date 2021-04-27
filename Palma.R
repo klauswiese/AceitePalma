@@ -18,22 +18,22 @@ Honduras <- "data/HNg.gpkg" %>%
   sf_as_ee()
 
 #dataset
-#Import the dataset; a collection of composite granules from 2019.
+#Importar el dataset; una coleccions compuesta del 2019.
 dataset <- ee$ImageCollection('BIOPAMA/GlobalOilPalm/v1')
 
-#Select the classification band.
+#Seleccionar la banda "classification".
 opClass <- dataset$select('classification')
 
-#Mosaic all of the granules into a single image.
+#Crear mosaicoa a partir de todos los "granules".
 mosaic <- opClass$mosaic()
 
-#paleta de colores
+#Paleta de colores
 VosParams <- list(palette = c(
   'ff0000','ef00ff', '696969'),
   min = 1,
   max = 3)
 
-#Create a mask to add transparency to non-oil palm plantation class pixels.
+#Crear mascara para dar transparencia a los pixeles que corresponden a clases diferentes a la palma aceitera.
 mask <- mosaic$neq(3)
 mask <- mask$where(mask$eq(0), 0.6)
 
