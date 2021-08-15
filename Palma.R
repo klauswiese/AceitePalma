@@ -2,9 +2,6 @@
 #https://developers.google.com/earth-engine/datasets/catalog/BIOPAMA_GlobalOilPalm_v1
 #K. Wiese 15 de abril 2021
 
-#definir directorio de trabajo
-setwd("~/git/AceitePalma/")
-
 #Librerias
 library(rgee)
 library(sf)
@@ -46,7 +43,7 @@ Map$addLayer(
   Map$addLayer(
     eeObject = mosaic$updateMask(mask),
     VosParams,
-    name = "Palma para Aceite de Oliva"
+    name = "Palma para Aceite"
   )
 
 
