@@ -43,5 +43,5 @@ Map$addLayer(
   Map$addLayer(
     eeObject = mosaic$updateMask(mask),
     VosParams,
-    name = "Palma para Aceite"
+    name = "Palma Aceitera"
   )
