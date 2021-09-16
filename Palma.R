@@ -1,4 +1,4 @@
-#Dataset para ver aceite de palma
+#Dataset para ver distribución para palma aceitera
 #https://developers.google.com/earth-engine/datasets/catalog/BIOPAMA_GlobalOilPalm_v1
 #K. Wiese 15 de abril 2021
 
@@ -45,7 +45,3 @@ Map$addLayer(
     VosParams,
     name = "Palma para Aceite"
   )
-
-
-
-
