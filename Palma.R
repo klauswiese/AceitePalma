@@ -7,7 +7,7 @@ library(rgee)
 library(sf)
 
 #Inicializacion
-ee_Initialize(email = "klauswiesengine@gmail.com", drive = TRUE)
+ee_Initialize(email = "klauswiesengine@gmail.com")
 
 #Límites área de estudio
 Honduras <- "data/HNg.gpkg" %>%
