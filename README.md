@@ -3,4 +3,4 @@ Acceder a información sobre plantaciones para Aceite de Palma. Es un modelo glo
 
 # Mejoras
 
-Dedemos introducir datos locales y a partir de esto ajusta los datos para Honduras.
+Debemos introducir datos locales y a partir de esto ajustar los datos para Honduras.
